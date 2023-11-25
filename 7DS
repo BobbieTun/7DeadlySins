@@ -44,7 +44,7 @@ local Window = Rayfield:CreateWindow({
  })
 
  local SlideTab = Window:CreateTab("Movement Changer", nil) -- Title, Image
- local Slider = SlideTab:CreateSlider({
+ local SpeedSlider = SlideTab:CreateSlider({
     Name = "Speed",
     Range = {0, 350},
     Increment = 15,
@@ -56,7 +56,7 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
- local Slider = Tab:CreateSlider({
+ local JumpSlider = SlideTab:CreateSlider({
     Name = "JumpPower",
     Range = {0, 250},
     Increment = 10,
