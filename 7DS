@@ -43,9 +43,14 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
- local Button = MainTab:CreateButton({
-    Name = "Fps Boost",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/BobbieTun/FpsBoost/main/FpsBoost"))()
+ local Slider = Tab:CreateSlider({
+    Name = "Speed",
+    Range = {0, 350},
+    Increment = 15,
+    Suffix = "Speed Slide",
+    CurrentValue = 16,
+    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
     end,
  })
