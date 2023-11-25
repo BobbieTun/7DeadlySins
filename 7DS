@@ -29,6 +29,7 @@ local Window = Rayfield:CreateWindow({
  local MainTab = Window:CreateTab(" Maintab", nil) -- Title, Image
  local Section = MainTab:CreateSection("Home Section")
 
+ 
  local Button = MainTab:CreateButton({
     Name = "Command script",
     Callback = function()
@@ -36,6 +37,7 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
+ 
  local Button = MainTab:CreateButton({
     Name = "R = reset",
     Callback = function()
@@ -43,7 +45,9 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
+ 
  local SlideTab = Window:CreateTab("Movement Changer", nil) -- Title, Image
+ 
  local SpeedSlider = SlideTab:CreateSlider({
     Name = "Speed",
     Range = {0, 350},
@@ -56,6 +60,7 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
+ 
  local JumpSlider = SlideTab:CreateSlider({
     Name = "JumpPower",
     Range = {0, 250},
