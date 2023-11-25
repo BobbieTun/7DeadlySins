@@ -38,17 +38,7 @@ local Window = Rayfield:CreateWindow({
  })
 
  
- local Button = MainTab:CreateButton({
-    Name = "R = reset",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/BobbieTun/R_Reset/main/R_Reset.txt"))() 
-    end,
- })
-
- 
- local SlideTab = Window:CreateTab("Movement Changer", nil) -- Title, Image
- 
- local SpeedSlider = SlideTab:CreateSlider({
+ local SpeedSlider = MainTabTab:CreateSlider({
     Name = "Speed",
     Range = {0, 350},
     Increment = 15,
