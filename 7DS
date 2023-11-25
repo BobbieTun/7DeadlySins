@@ -43,4 +43,9 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
- 
+ local Button = MainTab:CreateButton({
+    Name = "Fps Boost",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BobbieTun/FpsBoost/main/FpsBoost"))()
+    end,
+ })
