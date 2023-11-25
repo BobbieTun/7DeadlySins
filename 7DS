@@ -1,0 +1,46 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "7 Deadly sins ",
+    LoadingTitle = "7 Deaths",
+    LoadingSubtitle = "by BobbieTun",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "DaemonHub"
+    },
+    Discord = {
+       Enabled = false,
+       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Only 7 Deadly sins member",
+       Subtitle = "Put your given key here",
+       Note = "No method of obtaining the key is provided",
+       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+       SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = {"7DSM"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+ })
+
+ local MainTab = Window:CreateTab(" Maintab", nil) -- Title, Image
+ local Section = MainTab:CreateSection("Home Section")
+
+ local Button = MainTab:CreateButton({
+    Name = "Command script",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() 
+    end,
+ })
+
+ local Button = MainTab:CreateButton({
+    Name = "R = reset",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BobbieTun/R_Reset/main/R_Reset.txt"))() 
+    end,
+ })
+
+ 
