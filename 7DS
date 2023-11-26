@@ -59,6 +59,14 @@ local Button = MainTab:CreateButton({
    end,
 })
 
+local Button = MainTab:CreateButton({
+   Name = "Mighty Auto clicker",
+   Callback = function()
+      getgenv().key = "Hostile"
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/The-telligence/main/MC%20KSystem%202"))()
+   end,
+})
+
 local MuscleLegend = Window:CreateTab(" Muscle legend", nil) -- Title, Image
 local MusclelegendSection = MuscleLegend:CreateSection("MuscleLegend")
 
@@ -70,7 +78,7 @@ local Button = MuscleLegend:CreateButton({
 })
 
 
-local SlideTab = Window:CreateTab(" Change ur speed/jumppower", nil) -- Title, Image
+local SlideTab = Window:CreateTab(" Local Player", nil) -- Title, Image
 local SliderSection = SlideTab:CreateSection("Slider selection")
 
 local SpeedSlider = SlideTab:CreateSlider({
