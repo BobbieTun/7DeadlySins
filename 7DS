@@ -45,6 +45,14 @@ local Button = MainTab:CreateButton({
    end,
 })
 
+local Button = MainTab:CreateButton({
+   Name = "Fps Boost",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/BobbieTun/FpsBoost/main/FpsBoost"))()
+   end,
+})
+
+
 local MuscleLegend = Window:CreateTab(" Muscle legend", nil) -- Title, Image
 local MusclelegendSection = MuscleLegend:CreateSection("MuscleLegend")
 
