@@ -5,7 +5,7 @@ local Window = Rayfield:CreateWindow({
     LoadingTitle = "7 Deaths",
     LoadingSubtitle = "by BobbieTun",
     ConfigurationSaving = {
-       Enabled = true,
+       Enabled = false,
        FolderName = nil, -- Create a custom folder for your hub/game
        FileName = "DaemonHub"
     },
@@ -29,36 +29,28 @@ local Window = Rayfield:CreateWindow({
  local MainTab = Window:CreateTab(" Maintab", nil) -- Title, Image
  local Section = MainTab:CreateSection("Home Section")
 
- 
+
+
  local Button = MainTab:CreateButton({
-    Name = "Command script",
-    Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() 
-    end,
- })
+   Name = "Command script",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() 
+   end,
+})
 
- 
- local SpeedSlider = MainTabTab:CreateSlider({
-    Name = "Speed",
-    Range = {0, 350},
-    Increment = 15,
-    Suffix = "Speed Slide",
-    CurrentValue = 16,
-    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-    Callback = function(Value)
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
-    end,
- })
+local Button = MainTab:CreateButton({
+   Name = "Destroy Gui",
+   Callback = function()
+      Rayfield:Destroy()
+   end,
+})
 
- 
- local JumpSlider = SlideTab:CreateSlider({
-    Name = "JumpPower",
-    Range = {0, 250},
-    Increment = 10,
-    Suffix = "Jump Slide",
-    CurrentValue = 10,
-    Flag = "Slider2", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-    Callback = function(Value)
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
-    end,
- })
+local MuscleLegend = Window:CreateTab(" Muscle legend", nil) -- Title, Image
+local MusclelegendSection = MuscleLegend:CreateSection("MuscleLegend")
+
+local Button = MuscleLegend:CreateButton({
+   Name = "SpeedHub Script",
+   Callback = function()
+      loadstring(game:HttpGet(('https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Muscle-Legends'),true))()
+   end,
+})
