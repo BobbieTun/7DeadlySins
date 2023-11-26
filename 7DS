@@ -112,3 +112,10 @@ local JumpSlider = SlideTab:CreateSlider({
        game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
    end,
 })
+
+local Button = SlideTab:CreateButton({
+   Name = "Infinite Jump",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/BobbieTun/Infjump/main/Infjump"))()
+   end,
+})
