@@ -65,7 +65,7 @@ local Button = MuscleLegend:CreateButton({
 
 
 local SlideTab = Window:CreateTab(" Change ur speed/jumppower", nil) -- Title, Image
-local SliderSection = MovementSlider:CreateSection("Slider selection")
+local SliderSection = SlideTab:CreateSection("Slider selection")
 
 local SpeedSlider = SlideTab:CreateSlider({
    Name = "Speed",
