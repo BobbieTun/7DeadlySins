@@ -26,7 +26,7 @@ local Window = Rayfield:CreateWindow({
     }
  })
 
- local MainTab = Window:CreateTab(" Maintab", nil) -- Title, Image
+ local MainTab = Window:CreateTab(" Misc", nil) -- Title, Image
  local Section = MainTab:CreateSection("Home Section")
 
 
@@ -52,6 +52,12 @@ local Button = MainTab:CreateButton({
    end,
 })
 
+local Button = MainTab:CreateButton({
+   Name = "R = reset",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/BobbieTun/R_Reset/main/R_Reset.txt"))() 
+   end,
+})
 
 local MuscleLegend = Window:CreateTab(" Muscle legend", nil) -- Title, Image
 local MusclelegendSection = MuscleLegend:CreateSection("MuscleLegend")
