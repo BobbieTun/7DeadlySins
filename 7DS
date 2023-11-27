@@ -165,7 +165,7 @@ local Button = OtherGames:CreateButton({
 })
 
 local Button = OtherGames:CreateButton({
-   Name = "Tower Of Hell",
+   Name = "Tower Of Hell(Not working 100%)",
    Callback = function()
       getgenv().Team = "Pirates"
       loadstring(game:HttpGet("https://raw.githubusercontent.com/iiProductionz/Floater-Scripts/main/WaifuEdition/Tower%20Of%20Hell"))()
