@@ -84,6 +84,13 @@ local Button = MuscleLegend:CreateButton({
    end,
 })
 
+local Button = MuscleLegend:CreateButton({
+   Name = "Punch rock script",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/harisiskandar178/Roblox-Script/main/Muscle%20Legend"))()
+   end,
+})
+
 
 local SlideTab = Window:CreateTab(" Local Player", nil) -- Title, Image
 local SliderSection = SlideTab:CreateSection("Slider selection")
