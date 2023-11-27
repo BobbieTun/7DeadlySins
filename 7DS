@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-    Name = "7 Deadly sins - - (Beta) - - ",
+    Name = "7 Deadly sins ",
     LoadingTitle = "7 Deaths",
     LoadingSubtitle = "by BobbieTun",
     ConfigurationSaving = {
@@ -153,7 +153,7 @@ local Button = BloxFruit:CreateButton({
    end,
 })
 
-local OtherGames = Window:CreateTab(" Blox Fruit Scripts", nil) -- Title, Image
+local OtherGames = Window:CreateTab(" Other games", nil) -- Title, Image
 local GamesSection = OtherGames:CreateSection("Bfruit")
 
 local Button = OtherGames:CreateButton({
