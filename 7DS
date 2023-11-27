@@ -91,6 +91,12 @@ local Button = MuscleLegend:CreateButton({
    end,
 })
 
+local Button = MuscleLegend:CreateButton({
+   Name = "Key-Script Turbo",
+   Callback = function()
+      loadstring(Game:HttpGet"https://gitlab.com/turbohubz/loader.xyz/loader/-/raw/main/TurboHub-Loader")()
+   end,
+})
 
 local SlideTab = Window:CreateTab(" Local Player", nil) -- Title, Image
 local SliderSection = SlideTab:CreateSection("Slider selection")
