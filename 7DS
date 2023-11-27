@@ -171,3 +171,10 @@ local Button = OtherGames:CreateButton({
       loadstring(game:HttpGet("https://raw.githubusercontent.com/iiProductionz/Floater-Scripts/main/WaifuEdition/Tower%20Of%20Hell"))()
    end,
 })
+
+local Button = OtherGames:CreateButton({
+   Name = "ForgottenMemories",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/lolpoppyus/Roblox-Lua/master/ForgottenMemories.lua"))()
+   end,
+})
