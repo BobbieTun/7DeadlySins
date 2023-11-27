@@ -74,29 +74,6 @@ local Button = MainTab:CreateButton({
    end,
 })
 
-local MuscleLegend = Window:CreateTab(" Muscle legend", nil) -- Title, Image
-local MusclelegendSection = MuscleLegend:CreateSection("MuscleLegend")
-
-local Button = MuscleLegend:CreateButton({
-   Name = "SpeedHub Script",
-   Callback = function()
-      loadstring(game:HttpGet(('https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Muscle-Legends'),true))()
-   end,
-})
-
-local Button = MuscleLegend:CreateButton({
-   Name = "Punch rock script",
-   Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/harisiskandar178/Roblox-Script/main/Muscle%20Legend"))()
-   end,
-})
-
-local Button = MuscleLegend:CreateButton({
-   Name = "Key-Script Turbo",
-   Callback = function()
-      loadstring(Game:HttpGet"https://gitlab.com/turbohubz/loader.xyz/loader/-/raw/main/TurboHub-Loader")()
-   end,
-})
 
 local SlideTab = Window:CreateTab(" Local Player", nil) -- Title, Image
 local SliderSection = SlideTab:CreateSection("Slider selection")
@@ -132,3 +109,47 @@ local Button = SlideTab:CreateButton({
       loadstring(game:HttpGet("https://raw.githubusercontent.com/BobbieTun/Infjump/main/Infjump"))()
    end,
 })
+
+local MuscleLegend = Window:CreateTab(" Muscle legend", nil) -- Title, Image
+local MusclelegendSection = MuscleLegend:CreateSection("MuscleLegend")
+
+local Button = MuscleLegend:CreateButton({
+   Name = "SpeedHub Script",
+   Callback = function()
+      loadstring(game:HttpGet(('https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Muscle-Legends'),true))()
+   end,
+})
+
+local Button = MuscleLegend:CreateButton({
+   Name = "Punch rock script",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/harisiskandar178/Roblox-Script/main/Muscle%20Legend"))()
+   end,
+})
+
+local Button = MuscleLegend:CreateButton({
+   Name = "Key-Script Turbo",
+   Callback = function()
+      loadstring(Game:HttpGet"https://gitlab.com/turbohubz/loader.xyz/loader/-/raw/main/TurboHub-Loader")()
+   end,
+})
+
+local BloxFruit = Window:CreateTab(" Blox Fruit Scripts", nil) -- Title, Image
+local BloxFruitSection = BloxFruit:CreateSection("Bfruit")
+
+local Button = BloxFruit:CreateButton({
+   Name = "W-Azure(v3_Main_Rewrite)",
+   Callback = function()
+      getgenv().Team = "Pirates"
+      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+   end,
+})
+
+local Button = BloxFruit:CreateButton({
+   Name = "Doraemon Script",
+   Callback = function()
+      getgenv().Team = "Pirates"
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/onepicesenpai/onepicesenpai/main/onichanokaka'))()
+   end,
+})
+
