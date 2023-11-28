@@ -70,7 +70,7 @@ local Button = MainTab:CreateButton({
 local Button = MainTab:CreateButton({
    Name = "Noclip",
    Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/BobbieTun/Noclip/main/Noclip?token=GHSAT0AAAAAACJV7EHG4HRBO4OPRR7URBP4ZLDO2WQ"))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/BobbieTun/Noclip/main/Noclip"))()
    end,
 })
 
